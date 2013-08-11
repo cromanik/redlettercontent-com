@@ -1,0 +1,8 @@
+{% set subtitle = "Unexpected Error" %}
+
+{% extends "base.html" %}
+
+{% block content %}
+<p>Sorry, something unexpected happened while loading <code>{{ path }}</code>.</p>
+<p>Please try again later!</p>
+{% endblock %}

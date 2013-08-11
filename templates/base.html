@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Red Letter Content{% if subtitle %} • {{ subtitle }}{% endif %}</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
+    <link href="/static/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Red Letter Content</h1>
+
+      <div id="sidebar">
+        <ul id="navigation">
+          <li><a href="/">About Us</a></li>
+          <li><a href="/services.html">Our Services</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+
+        <ul id="social">
+          <li><a href="https://twitter.com/RedLtrContent" class="twitter-follow-button" data-show-count="false">Follow @RedLtrContent</a></li>
+        </ul>
+      </div>
+
+      <div id="content">
+        {% block content %}{% endblock content %}
+      </div>
+    </div>
+
+    <script>{% include "twitter.js" %}</script>
+
+    <script>{% include "googleanalytics.js" %}</script>
+  </body>
+</html>
