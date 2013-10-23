@@ -1,7 +1,33 @@
-{% set subtitle = "Our Services" %}
+{% set subtitle = "Services" %}
 
 {% extends "base.html" %}
 
 {% block content %}
-<p>Our Services</p>
+<div class="grey-bg">
+  <div class="set-width">
+    <section id="services">
+      <header>Services</header>
+      <article>
+        <p>Our areas of expertise include:</p>
+        <ul>
+          <li><a href="index.html#project-management">Project Management</a></li>
+          <li><a href="index.html#print-and-digital">Print and Digital Content Development</a></li>
+          <li><a href="index.html#proposal-development">Proposal Development</a></li>
+          <li><a href="index.html#copyediting">Copyediting</a></li>
+          <li><a href="index.html#copyediting">Proofreading</a></li>
+          <li><a href="index.html#ghostwriting">Ghostwriting</a></li>
+          <li><a href="index.html#xml-tagging">XML Tagging</a></li>
+        </ul>
+        <p>Rates are on a project-by-project basis.</p>
+      </article>
+    </section>
+  </div>
+</div>
+
+<div class="separator first">
+  <div class="set-width">
+    {% include "socialicons.html" %}
+  </div>
+</div>
+<div class="resetfloat"></div>
 {% endblock %}

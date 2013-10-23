@@ -3,6 +3,19 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p>Sorry, something unexpected happened while loading <code>{{ path }}</code>.</p>
-<p>Please try again later!</p>
+<div class="grey-bg">
+  <div class="set-width">
+    <section class="error">
+      <p>Sorry, something unexpected happened while loading <code>{{ path }}</code>.</p>
+      <p>Please try again later!</p>
+    </section>
+  </div>
+</div>
+
+<div class="separator first">
+  <div class="set-width">
+    {% include "socialicons.html" %}
+  </div>
+</div>
+<div class="resetfloat"></div>
 {% endblock %}

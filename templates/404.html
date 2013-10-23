@@ -3,5 +3,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<p>Sorry, the page <code>{{ path }}</code> wasn't found on this server.</p>
+<div class="grey-bg">
+  <div class="set-width">
+    <section class="error">
+      <p>Sorry, the page <code>{{ path }}</code> doesn't exist.</p>
+    </section>
+  </div>
+</div>
+
+<div class="separator first">
+  <div class="set-width">
+    {% include "socialicons.html" %}
+  </div>
+</div>
+<div class="resetfloat"></div>
 {% endblock %}
